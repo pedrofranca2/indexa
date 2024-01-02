@@ -1,0 +1,38 @@
+.contact ul {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.contact ul li {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 150%; 
+  color: #212529;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.phone {
+  font-weight: 400;
+}
+
+.contact ul li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.edit {
+margin-right: 16px;
+}
