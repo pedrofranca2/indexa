@@ -1,0 +1,33 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Unbounded:wght@200;600;700&family=Zen+Dots&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #0D6EFD;
+  padding-bottom: 40px
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin-top: 20px;
+}
+
+.title {
+  margin: 0;
+  font-family: Zen Dots;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #0D6EFD;
+  text-align: center;
+  span {
+    font-weight: 400;
+    color: #FD9843;
+  }
+}
