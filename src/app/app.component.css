@@ -1,0 +1,3 @@
+body {
+  background: var(--Linear, linear-gradient(180deg, #3D8BFD 0%, #E7F1FF 100%));
+}
