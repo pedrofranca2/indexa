@@ -1,3 +1,9 @@
 <app-container>
   <app-header></app-header>
+  <!-- Iterando as letras do alfabeto e renderizando-->
+@for (letter of alphabet; track letter){
+  <app-separator>
+    {{letter}}
+  </app-separator>
+}
 </app-container>
