@@ -1,12 +1,18 @@
 <app-container>
   <app-header></app-header>
+  <input 
+  type="search" 
+  placeholder="Digite para buscar"
+  [(ngModel)]="filterSearchText"
+  />
   <!-- Iterando as letras do alfabeto e renderizando-->
 @for (letter of alphabet; track letter){
   <app-separator>
     {{letter}}
   </app-separator>
+    <!-- Utilizando o filter criado no appComponent-->
   @for (contact of filterContacts(letter); track contact.id){
-    <app-contacts name="{{contact.nome}}" phone="{{contact.telefone}}"></app-contacts>
+    <app-contacts [name]="contact.nome" [phone]="contact.telefone"></app-contacts>
   }
 }
 </app-container>
