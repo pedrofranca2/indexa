@@ -5,6 +5,8 @@
   <app-separator>
     {{letter}}
   </app-separator>
-  <app-contacts name="Pedro" phone="31"></app-contacts>
+  @for (contact of filterContacts(letter); track contact.id){
+    <app-contacts name="{{contact.nome}}" phone="{{contact.telefone}}"></app-contacts>
+  }
 }
 </app-container>

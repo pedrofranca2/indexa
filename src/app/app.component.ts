@@ -6,6 +6,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { SeparatorComponent } from './components/separator/separator.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 
+interface Contact {
+  id: number;
+  nome: string;
+  telefone: string;
+}
+
+import agenda from './agenda.json';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,4 +29,11 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 })
 export class AppComponent {
   alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  contacts: Contact[] = agenda;
+
+  filterContacts(letter: string) : Contact[] {
+    return this.contacts.filter(contact => {
+      return contact.nome.toLowerCase().startsWith(letter);
+    })
+  }
 }
